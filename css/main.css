@@ -1,0 +1,350 @@
+:root{
+  --dark: #19283f;
+}
+
+/*font used for this project*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*nav section*/
+#nav{
+  background-color: var(--dark);
+}
+li.nav-item {
+    padding: 8px;
+}
+.navbar .navbar-nav .nav-link{
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active 
+,svg.svg-inline--fa.fa-magnifying-glass 
+,.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #33d1cc;
+}
+   /*top right icon in small sceren*/
+svg.svg-inline--fa.fa-magnifying-glass {
+    padding-left: 20px;
+    margin-top: 7px;
+    
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: #33d1cc;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+ #nav .btn {
+  background: #ff3150;
+  border-color: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+.s{
+      margin-top: 5px;
+  border-left: 1px solid #33d1cc;
+}
+hr{
+    width: 20%;
+    color: #33d1cc;
+    background-color: #33d1cc;
+    border: 0;
+    opacity: 1;
+    margin-left: 40%;
+    box-shadow: 0 0px 0px 1px #33d1cc;
+}
+
+/*main section*/
+ #main .btn {
+  background: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+#main{
+  background-color: var(--dark);
+  min-height: calc(100vh);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.align-items-center {
+    align-items: center!important;
+}
+
+/*good section*/
+.number {
+    font-size: 12rem;
+    color: #eff7fa;
+}
+.icon1 , .icon3 {
+    padding-top: 120px;
+    padding-left: 30px;
+    color: #33d1cc;
+}
+.card-text {
+    margin-top: 210px;
+}
+.imgs.position-relative {
+    margin-right: 95px;
+}
+#good h4{
+  color: #ffc400;
+}
+.icon2 {
+    padding-top: 120px;
+    padding-left: 20px;
+    color: #33d1cc;
+}
+
+
+/*make section*/
+#make{
+        background: #282A35 url(https://www.w3schools.com/spaces/files/priscilla-du-preez-XkKCui44iM0-unsplash.921aa0c0.jpg) no-repeat fixed center;
+}
+}
+/*#make{
+  background-color: #eff7fa;
+}*/
+
+ #make .rounded-pill {
+  background: #ff3150;
+  border-color: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+.btn:not(.rounded-pill):hover{
+  color: #ff3150;
+}
+
+
+/*animation in card in #make*/
+.box {
+
+  overflow: hidden;
+  position: relative;
+
+}
+.box:before {
+  content: attr(data-work);
+  position: absolute;
+  width: 100% ;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.7s;
+  font-size: 1.5rem;
+  transform: translate3d(-100%, -100%, 0px);
+}
+.box:hover::before {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.box.box-1:before {
+    background-color: rgb(209 122 51 / 67%);
+    color: white;
+}
+.box.box-2:before {
+    background-color: rgb(239 247 250 / 76%);
+    color: black;
+}
+.box.box-3:before {
+    background-color: rgb(84 84 84 / 76%);
+    color: white;
+}
+.box.box-4:before {
+    background-color: rgb(240 213 173 / 76%);
+    color: black;
+}
+.box.box-5:before {
+    background-color: rgb(240 213 173 / 76%);
+    color: black;
+}
+.box.box-6:before {
+    background-color: rgb(255 110 110 / 76%);
+    color: white;
+}
+.box.box-7:before {
+    background-color: rgb(239 247 250 / 76%);
+    color: black;
+}
+.box.box-8:before {
+    background-color: rgb(51 209 204 / 76%);
+    color: white;
+}
+
+/*Stuff section*/
+
+p.descrip.text-black-50.lh-lg {
+    max-width: 500px;
+    margin: auto;
+}
+ .btn-1 {
+  background: #ff3150;
+  border-color: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+.btn:hover {
+    color: #ffc429;
+}
+
+/*Meet section*/
+
+#Meet{
+     background-image: url("xcv.jpg");
+  background-color: #eff7fa;
+}
+#Meet .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#Meet .row .card-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+#Meet .card{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px;
+    transition: 0.7s ease;
+}
+#Meet .card:hover {
+    transform: scale(1.1);
+}
+
+
+#Meet .card-body {
+    flex: 1 1 auto;
+    padding: 0rem 0rem;
+}
+#Meet .h2{
+  background-color: #33d1cc9e;
+}
+
+/*Start section*/
+#Start{
+  background-color: #19283f;
+  color: white;
+}
+#Start .btn{
+
+  background: #ff3150;
+  border-color: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+    color: #ffc429;
+}
+
+/*Read section*/
+#Read .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#Read .row .card-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+#Read .card{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px;
+    transition: 0.7s ease;
+}
+#Read .card:hover{
+    transform: scale(1.1);
+}
+
+#Read .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+#Read .h2{
+  background-color: #33d1cc9e;
+}
+
+
+/*Subscribe section*/
+#Subscribe{
+  background-color: #ffc400;
+}
+#Subscribe .email {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#Subscribe .email:focus {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #ff7800;
+    outline: 0;
+    box-shadow: none;
+}
+.email::placeholder {
+  color: white;
+}
+
+#Subscribe .btn{
+  background-color: #19283f;
+  color: #ffc400;
+}
+
+
+/*footer*/
+#footer{
+  background-color: #19283f ;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+#footer .btn{
+  background: #ff3150;
+  border-color: #ff3150;
+  color: #ffc429;
+  padding: 0.5rem 1rem;
+}
+#footer .btn:hover{
+  background: #ffc429;
+  border-color: #ffc429;
+  color: #ff3150;
+  padding: 0.5rem 1rem;
+}
+#footer a {
+    color: #8c9499;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #ffc400;
+    text-decoration: none;
+}
+
